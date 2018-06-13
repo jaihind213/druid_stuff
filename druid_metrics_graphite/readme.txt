@@ -60,7 +60,7 @@ at $DRUID_HOME/conf/druid/_common/log4j2.xml
 
 druid.extensions.loadList=["druid-kafka-eight","druid-avro-extensions","druid-parquet-extensions","postgresql-metadata-storage","druid-s3-extensions","graphite-emitter"]
 
-druid.monitoring.monitors=["com.metamx.metrics.JvmMonitor","io.druid.client.cache.CacheMonitor","io.druid.server.metrics.HistoricalMetricsMonitor","io.druid.server.metrics.QueryCountStatsMonitor"]
+druid.monitoring.monitors=["com.metamx.metrics.JvmMonitor","io.druid.client.cache.CacheMonitor","io.druid.server.metrics.HistoricalMetricsMonitor","io.druid.server.metrics.QueryCountStatsMonitor","io.druid.server.metrics.HistoricalMetricsMonitor"]
 druid.emitter=graphite
 #use 2004 if using pickle , which is default else use 2003 for plaintext refer to 'druid.emitter.graphite.protocol'
 druid.emitter.graphite.port=2004 
@@ -68,7 +68,7 @@ druid.emitter.graphite.hostname=10.2.10.234
 
 #### if you want to send all metrics then use this event convertor
 #druid.emitter.graphite.eventConverter={"type":"all", "namespacePrefix": "wakanda", "ignoreHostname":false, "ignoreServiceName":false}
-##else if you want to have a whitelist of metrics sent -- use this whitelist format
+##else if you want to have a whitelist of metrics sent -- the full whitelist available in this repo for your convenience.
 druid.emitter.graphite.eventConverter={"type":"whiteList", "namespacePrefix": "wakanda", "ignoreHostname":false, "ignoreServiceName":false, "mapPath":"/path/to/file/graphite.extensive.whitelist"}
 
 ## i have created the extensive whitelist of all metrics in this repo itself. remove what u dont need. see file graphite.extensive.whitelist
