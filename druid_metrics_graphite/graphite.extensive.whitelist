@@ -1,4 +1,5 @@
 {
+  "jetty/numOpenConnections" :[],
   "query/time" : ["dataSource", "type"],
   "query/node/time" : ["server"],
   "query/node/ttfb" : ["server"],
