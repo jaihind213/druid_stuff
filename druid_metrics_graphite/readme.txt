@@ -60,7 +60,7 @@ at $DRUID_HOME/conf/druid/_common/log4j2.xml
 
 druid.extensions.loadList=["druid-kafka-eight","druid-avro-extensions","druid-parquet-extensions","postgresql-metadata-storage","druid-s3-extensions","graphite-emitter"]
 
-druid.monitoring.monitors=["com.metamx.metrics.JvmMonitor","io.druid.client.cache.CacheMonitor","io.druid.server.metrics.HistoricalMetricsMonitor","io.druid.server.metrics.QueryCountStatsMonitor","io.druid.server.metrics.HistoricalMetricsMonitor"]
+druid.monitoring.monitors=["com.metamx.metrics.JvmMonitor","io.druid.client.cache.CacheMonitor","io.druid.server.metrics.HistoricalMetricsMonitor","io.druid.server.metrics.QueryCountStatsMonitor"]
 druid.emitter=graphite
 #use 2004 if using pickle , which is default else use 2003 for plaintext refer to 'druid.emitter.graphite.protocol'
 druid.emitter.graphite.port=2004 
