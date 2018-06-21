@@ -68,7 +68,7 @@ druid.emitter.graphite.hostname=10.2.10.234
 
 #### if you want to send all metrics then use this event convertor
 #druid.emitter.graphite.eventConverter={"type":"all", "namespacePrefix": "wakanda", "ignoreHostname":false, "ignoreServiceName":false}
-##else if you want to have a whitelist of metrics sent -- use this whitelist format
+##else if you want to have a whitelist of metrics sent -- the full whitelist available in this repo for your convenience.
 druid.emitter.graphite.eventConverter={"type":"whiteList", "namespacePrefix": "wakanda", "ignoreHostname":false, "ignoreServiceName":false, "mapPath":"/path/to/file/graphite.extensive.whitelist"}
 
 ## i have created the extensive whitelist of all metrics in this repo itself. remove what u dont need. see file graphite.extensive.whitelist
