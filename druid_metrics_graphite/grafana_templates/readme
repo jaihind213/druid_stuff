@@ -1,0 +1,11 @@
+note:
+
+druid has been configured with graphite namespace 'wakanda' i.e.
+
+---
+druid.emitter.graphite.eventConverter={"type":"whiteList", "namespacePrefix": "wakanda", "ignoreHostname":false, "ignoreServiceName":false, "mapPath":"/path/to/file/graphite.extensive.whitelist"}
+---
+
+Hence these templates have the word wakanda in it.
+
+replace wakanda with your own prefix if you have one
