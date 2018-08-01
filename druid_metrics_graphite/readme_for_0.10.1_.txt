@@ -1,6 +1,7 @@
-############
+####################
 To push metrics to graphite/grafana 
-############
+(tested with v0.10.1)
+#####################
 
 (0) start graphite
 
